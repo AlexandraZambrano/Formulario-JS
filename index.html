@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="container">
+
+    <h1 class="titulo">Regístrate</h1>
+
+    <form class="form" id="form">
+
+        <!--Usuario-->
+        <div class="form-control">
+
+            <label for="">Nombre de usuario</label>
+            <input type="text" placeholder="John1234" id="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+
+        </div>
+        <!--Email-->
+        <div class="form-control">
+
+            <label for="">Correo</label>
+            <input type="text" placeholder="John1234@gmail.com" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+
+        </div>
+
+        <!--Password-->
+        <div class="form-control">
+
+            <label for="">Contraseña</label>
+            <input type="password" placeholder="Escriba una contraseña" id="password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+
+        </div>
+        <span class="show-hide">
+        <i class="fas fa-eye" id="visibilityBtn"></i></span>
+    
+        <!--Password confirmation-->
+        <div class="form-control">
+
+            <label for="">Corfirmar contraseña</label>
+            <input type="password" placeholder="Repita la contraseña" id="password2">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <button type="submit">Registrarme</button>
+
+    </form>
+
+</div>
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonimous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

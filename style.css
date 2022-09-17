@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #A8D0DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: #2B4570;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-control input{
+    border: 2px solid #7180AC;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control i{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 10;
+    left: 0;
+}
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+    font-size: 11px;
+}
+
+.show-hide {
+    position: relative;
+    left: 33%;
+    bottom: 102px;
+    color:#A8D0DB;
+    cursor: pointer;
+}
+
+.show-hide .fa-eye.hide:before{
+    content: '\f070';
+}
+
+.form button{
+    background-color: #A8D0DB;
+    border: 2px solid #A8D0DB;
+    color: #2B4570;
+    display: block;
+    padding: 15px 10px;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: #2ecc71;
+    color: #fff;
+}
